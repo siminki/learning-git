@@ -36,10 +36,17 @@ h2 { font-size:clamp(3rem,7vw,6rem); font-weight:500; }.intro>p { max-width:520p
 .diagram .node { fill:var(--paper); stroke:var(--ink); stroke-width:3; }.diagram .accent { fill:var(--green); stroke:var(--ink); stroke-width:3; }
 .diagram .warm { fill:var(--orange); stroke:var(--ink); stroke-width:3; }.diagram .cool { fill:var(--blue); stroke:var(--ink); stroke-width:3; }
 .diagram text { fill:var(--ink); font:500 11px "DM Mono",monospace; }
+.branch-main,.branch-feature,.repo-history,.sync-arrow,.commit-arrow,.file-line,.added-line,.arrow-head { fill:none; stroke:var(--ink); stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round; }
+.branch-feature { stroke:#b75228; }.git-dot { fill:#171512; stroke:none; }.feature-dot { fill:#c85c28; }
+.branch-label { font-size:9px!important; }.repo-box rect { fill:#f7f1e2; stroke:var(--ink); stroke-width:2; }.repo-box .repo-bar { fill:var(--ink); stroke:var(--ink); stroke-width:17; }
+.repo-box text { fill:var(--paper); font-size:10px; letter-spacing:.08em; }.sync-arrow { stroke-width:1.5; opacity:.75; }.transfer-dot { fill:#c85c28; opacity:0; }
+.file-sheet rect,.commit-message rect { fill:#f7f1e2; stroke:var(--ink); stroke-width:2; }.file-line { stroke-width:3; }.added-line { stroke:#4f844a; stroke-width:3; }
+.commit-hash { fill:#c85c28; }.hash-label { fill:#fff!important; font-size:8px!important; }.commit-message text { font-size:9px; }
 .card-footer { display:flex; gap:1rem; align-items:flex-start; justify-content:space-between; }.tip { max-width:78%; font-size:.82rem; }
 .tip strong { display:block; margin-bottom:.25rem; font:500 .68rem "DM Mono",monospace; letter-spacing:.08em; text-transform:uppercase; }
-.replay { width:42px; height:42px; flex:0 0 auto; border:1px solid var(--ink); border-radius:50%; color:var(--ink); background:transparent; cursor:pointer; font-size:1rem; }
-.replay:hover,.replay:focus-visible { color:var(--paper); background:var(--ink); }
+.card-actions { display:flex; align-items:stretch; flex-wrap:wrap; gap:.45rem; }
+.replay,.direction { min-height:42px; padding:.65rem .9rem; border:1px solid var(--ink); border-radius:2px; color:var(--paper); background:var(--ink); cursor:pointer; font:500 .7rem "DM Mono",monospace; letter-spacing:.08em; }
+.direction { color:var(--ink); background:transparent; }.replay span { margin-left:.35rem; font-size:1rem; }.replay:hover,.replay:focus-visible,.direction:hover,.direction:focus-visible { color:var(--ink); background:var(--green); }
 .closing { padding:clamp(6rem,12vw,11rem) 0; text-align:center; }.closing blockquote { max-width:980px; margin:0 auto 2rem; font-size:clamp(3rem,7.5vw,7rem); }
 .closing>p:not(.eyebrow) { max-width:590px; margin:0 auto 2rem; }.button-dark { border-color:var(--ink); color:var(--paper); background:var(--ink); }
 footer { display:flex; justify-content:space-between; gap:1rem; padding:1.5rem clamp(1.25rem,5vw,5rem); color:rgba(255,255,255,.62); background:var(--ink); font:.7rem "DM Mono",monospace; }
