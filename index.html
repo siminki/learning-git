@@ -3,10 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="An animated guide to essential Git and GitHub concepts.">
+    <title>Git, visually</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Brad Frost Git Test</h1>
-    <p>This is my first Git test. I am learning how Git tracks changes.</p>
+    <header class="hero" id="top">
+        <nav class="nav" aria-label="Primary navigation">
+            <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">G</span><span>Git, visually</span></a>
+            <a class="nav-link" href="#concepts">Explore concepts <span aria-hidden="true">↓</span></a>
+        </nav>
+        <div class="hero-content">
+            <p class="eyebrow">A friendly Git &amp; GitHub field guide</p>
+            <h1>See how your code<br><em>moves.</em></h1>
+            <p class="hero-copy">Eleven essential ideas, explained without the jargon. Hover, focus, or replay each diagram to watch the workflow happen.</p>
+            <a class="button" href="#concepts">Start exploring <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-orbit" aria-hidden="true">
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+            <div class="hero-node node-a"></div><div class="hero-node node-b"></div><div class="hero-node node-c"></div>
+        </div>
+    </header>
+    <main>
+        <section class="intro" id="concepts" aria-labelledby="concepts-title">
+            <div><p class="eyebrow">The cheat sheet, brought to life</p><h2 id="concepts-title">From repository<br>to pull request.</h2></div>
+            <p>Git remembers the history of your project. GitHub gives that history a home online where people can collaborate. These are the building blocks.</p>
+        </section>
+        <section class="concept-grid" id="concept-grid" aria-label="Git and GitHub concepts"></section>
+        <section class="closing">
+            <p class="eyebrow">The useful mental model</p>
+            <blockquote>Save small. Explain clearly.<br>Share when it’s ready.</blockquote>
+            <p>You do not need to memorise every command. Understand the movement, and the commands will make sense.</p>
+            <a class="button button-dark" href="#top">Back to the top <span aria-hidden="true">↑</span></a>
+        </section>
+    </main>
+    <footer><span>Built with vanilla HTML, CSS &amp; JavaScript.</span><span>Animated with GSAP.</span></footer>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
